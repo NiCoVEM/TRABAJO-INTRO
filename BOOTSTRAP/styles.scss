@@ -1,0 +1,36 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+.row {
+    background-color:cornsilk;
+    padding: 5px;
+}
+
+ .col {
+    background-color:rgb(255, 9, 9);
+    margin: 3px;
+}
+
+ .custom-height-1 {
+    height: 50px;
+}
+
+.custom-height-2 {
+    height: 1200px;
+}
+
+.custom-height-3 {
+    height: 900px;
+}
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
