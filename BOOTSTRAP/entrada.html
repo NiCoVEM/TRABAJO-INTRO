@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title>
+
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<style>
+
+.custom-height-1 {
+    height: 50px;
+}
+
+.mb-9 {
+  margin-bottom: 9rem;
+}
+
+.btn-azul {
+  background-color: blue;
+  color: white;
+}
+
+.banner{
+    background: url("../BOOTSTRAP/imagenes/yellow-orange-background.jpg") no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+
+.banner-content > h1{
+    font-size: 55px;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.banner-content > h3{
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+</style>
+
+    <section class="banner bg-white">
+        <div class="container text-center">
+            <div class="row custom-height-1 mb-9">
+                <div class="col-5 border bg-light" style="background-color: white;">
+                    Inicio
+                </div>
+                <div class="col-2 border bg-light" style="background-color: white;">
+                    Buscar
+                </div>
+                <div class="col-5 border bg-light text-end" style="background-color: white;">
+                    Iniciar Sesión / Registrarse
+                </div>
+            </div>
+        </div>
+
+        <div class="container"> 
+            <div class="row align-items-center justify-content-between">
+                <div class="col">
+                    <div class="banner-content">
+                        <h1 class="text-uppercase fw-bolder">Busca La Ayuda En Ti</h1>
+                        <h3 class="border-bottom border-primary border-5 pb-4">Inicia tu viaje hacia la superación de la depresión y el bienestar emocional. Tu voz es esencial. ¡Comienza el cuestionario y da el primer paso hacia una vida más saludable y feliz!</h3>
+                        <a href="#" target="_blank" class="btn btn-azul text-uppercase fw-border">¡Comenzar cuestionario!</a>
+                    </div>
+                </div>
+                <div class="col"> 
+                    <div class="banner-img">
+                        <img src="../BOOTSTRAP/imagenes/BAET.png" alt="Portada de Busca La Ayuda En Ti" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

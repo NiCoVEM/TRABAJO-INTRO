@@ -1,36 +1,39 @@
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+ @import "./node_modules/bootstrap/scss/bootstrap.scss";
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
 
-.row {
-    background-color:cornsilk;
-    padding: 5px;
+@include media-breakpoint-only(xs) {
+  .banner-content > h1{
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .banner-content > h2{
+  font-size: 35px; 
+  }
 }
 
- .col {
-    background-color:rgb(255, 9, 9);
-    margin: 3px;
+@include media-breakpoint-only(sm) {
+  .banner-content > h1{
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .banner-content > h2{
+  font-size: 40px; 
+  }
 }
 
- .custom-height-1 {
-    height: 50px;
-}
+@include media-breakpoint-only(md) {
+  .banner-content > h1{
+    font-size: 90px;
+    line-height: 100px;
+    }
+  }
 
-.custom-height-2 {
-    height: 1200px;
+@include media-breakpoint-only(lg) {
+  .banner-content > h1{
+    font-size: 70px;
+    line-height: 85px;
+  }
+  .banner-content > h2{
+  font-size: 40px; 
+  }
 }
-
-.custom-height-3 {
-    height: 900px;
-}
-
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
