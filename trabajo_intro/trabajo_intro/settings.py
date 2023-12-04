@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'trabajo_intro.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'cuestionario', #colocar nombre de base de datos aqui
+        'USER': 'postgres',
+        'PASSWORD': 'Monserrat13', #colocar contraseña aqui
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
