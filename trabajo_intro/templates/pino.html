@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Cool</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("{% static '/BOOTSTRAP/imagenes/fondo-pagina-2.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: #000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .title {
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        .main-content {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            margin-right: 10px;
+        }
+
+        .main-content .small-image {
+            max-width: 280px;
+            height: auto;
+            float: right;
+        }
+
+        .footer {
+            text-align: left;
+            margin-top: 50px;
+            margin-right: 300px;
+            padding-top: 20px;
+            border-top: 1px solid rgb(255, 255, 255)8e8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="{% static '/BOOTSTRAP/imagenes/Pino1.jpg' %}" alt="Imagen Superior">
+            <div class="title">¡Eres un Pino!</div>
+        </div>
+
+        <div class="main-content">
+            <p>El pino es un árbol con hojas perennes y agujas afiladas que se agrupan en fascículos. Su corteza es gruesa y rugosa, generalmente de color marrón. Lo que hace único al pino es su capacidad para adaptarse a diferentes climas y su rápido crecimiento, alcanzando alturas impresionantes en poco tiempo.</p>
+            <img class="small-image" src="{% static '/BOOTSTRAP/imagenes/Pino2.jpg' %}" alt="Imagen Inferior">
+        </div>
+
+        <div class="footer">
+            <h2>¿Cómo influye este árbol en el medio ambiente?</h2>
+            <p>Los pinos desempeñan un papel crucial en la ecología al proporcionar hábitats diversos para diversas especies de aves y mamíferos. Además, estos árboles son esenciales para mantener el equilibrio del suelo y prevenir la erosión debido a sus raíces extensas y fuertes. Su capacidad para absorber grandes cantidades de dióxido de carbono ayuda a mejorar la calidad del aire.</p>
+            <h2>¿Cómo cuidar este árbol?</h2>
+            <p>Para cuidar un pino, es fundamental proporcionarle un suelo bien drenado y moderadamente ácido. Evitar el exceso de riego y asegurar una exposición adecuada al sol contribuirá a su salud. Además, la poda ocasional puede ser beneficiosa para mantener su forma y estimular un crecimiento saludable. Plantar pinos nativos en áreas adecuadas también ayuda a preservar la diversidad biológica y a mantener el equilibrio ecológico.</p>
+        </div>
+    </div>
+    <a href="/entrada">Volver al inicio</a>
+</body>
+</html>
