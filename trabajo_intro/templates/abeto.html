@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Final</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("{% static '/BOOTSTRAP/imagenes/fondo-pagina-2.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: #000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .title {
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        .main-content {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            margin-right: 10px;
+        }
+
+        .main-content .small-image {
+            max-width: 280px;
+            height: auto;
+            float: right;
+        }
+
+        .footer {
+            text-align: left;
+            margin-top: 50px;
+            margin-right: 300px;
+            padding-top: 20px;
+            border-top: 1px solid rgb(255, 255, 255)8e8;
+        }
+        .back-to-home-button {
+            background-color: #808080; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            padding: 10px 20px; /* Espaciado interno del botón */
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px; /* Espaciado superior */
+            cursor: pointer;
+        }
+
+        /* Cambia el color cuando pasas el mouse sobre el botón */
+        .back-to-home-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="{% static '/BOOTSTRAP/imagenes/Abeto1.jpg' %}" alt="Imagen Superior">
+            <div class="title">¡Eres un Abeto!</div>
+        </div>
+
+        <div class="main-content">
+            <p>El abeto es un árbol de hoja perenne con agujas suaves y flexibles que crean una copa piramidal distintiva. Su corteza es delgada y rugosa, y sus piñas cuelgan elegantemente de las ramas. Lo que hace único al abeto es su papel destacado como árbol de Navidad, gracias a su forma simétrica y atractiva fragancia.</p>
+            <img class="small-image" src="{% static '/BOOTSTRAP/imagenes/Abeto2.jpg' %}" alt="Imagen Inferior">
+        </div>
+
+        <div class="footer">
+            <h2>¿Cómo influye este árbol en el medio ambiente?</h2>
+            <p>Los abetos desempeñan un papel esencial en la ecología al proporcionar refugio y alimento para diversas especies de vida silvestre. Además, su capacidad para retener las agujas durante todo el año contribuye a la prevención de la erosión del suelo. Los bosques de abetos también actúan como sumideros de carbono, ayudando a mitigar el cambio climático al absorber dióxido de carbono de la atmósfera.</p>
+            <h2>¿Cómo cuidar este árbol?</h2>
+            <p>Para cuidar un abeto, es fundamental plantarlo en suelos bien drenados y ligeramente ácidos. Durante los primeros años, asegúrese de proporcionar riego regular para establecer un sistema de raíces fuerte. La poda ligera puede ayudar a mantener su forma natural y a eliminar ramas muertas. Si se utiliza como árbol de Navidad, asegúrese de mantenerlo bien hidratado en un soporte con agua para prolongar su frescura y minimizar la caída de agujas.</p>
+            <button class="back-to-home-button"><a href="/entrada" style="color: black; text-decoration: none;">Volver al inicio</a></button>
+        </div>
+    </div>
+</body>
+</html>

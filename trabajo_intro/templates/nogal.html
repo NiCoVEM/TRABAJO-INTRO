@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Final</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("{% static '/BOOTSTRAP/imagenes/fondo-pagina-2.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: #000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .title {
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        .main-content {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            margin-right: 10px;
+        }
+
+        .main-content .small-image {
+            max-width: 280px;
+            height: auto;
+            float: right;
+        }
+
+        .footer {
+            text-align: left;
+            margin-top: 50px;
+            margin-right: 300px;
+            padding-top: 20px;
+            border-top: 1px solid rgb(255, 255, 255)8e8;
+        }
+        .back-to-home-button {
+            background-color: #808080; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            padding: 10px 20px; /* Espaciado interno del botón */
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px; /* Espaciado superior */
+            cursor: pointer;
+        }
+
+        /* Cambia el color cuando pasas el mouse sobre el botón */
+        .back-to-home-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="{% static '/BOOTSTRAP/imagenes/Nogal1.jpg' %}" alt="Imagen Superior">
+            <div class="title">¡Eres un Nogal!</div>
+        </div>
+
+        <div class="main-content">
+            <p>El nogal es un árbol de hojas caducas con un tronco fuerte y ramas amplias. Sus hojas son grandes, compuestas y de color verde intenso en primavera y verano, cambiando a tonos cálidos en otoño antes de caer. Lo que hace único al nogal es la producción de nueces, que son frutos comestibles y valiosos.</p>
+            <img class="small-image" src="{% static '/BOOTSTRAP/imagenes/Nogal2.jpg' %}" alt="Imagen Inferior">
+        </div>
+
+        <div class="footer">
+            <h2>¿Cómo influye este árbol en el medio ambiente?</h2>
+            <p>El nogal tiene impactos positivos en el medio ambiente al proporcionar hábitats para diversas especies de vida silvestre y contribuir a la biodiversidad. Además, estos árboles ayudan a prevenir la erosión del suelo con sus raíces profundas y extensas. Su capacidad para absorber dióxido de carbono durante el crecimiento también contribuye a mitigar el cambio climático.</p>
+            <h2>¿Cómo cuidar este árbol?</h2>
+            <p>Para cuidar un nogal, es esencial plantarlo en un suelo bien drenado y proporcionarle una exposición adecuada al sol. El riego regular es importante durante los primeros años para establecer un sistema de raíces fuerte. La poda puede ser necesaria para dar forma al árbol y eliminar ramas muertas o enfermas. Además, es fundamental protegerlo de plagas y enfermedades comunes, y proporcionar nutrientes adicionales cuando sea necesario para promover un crecimiento saludable y una producción de nueces óptima.</p>
+            <button class="back-to-home-button"><a href="/entrada" style="color: black; text-decoration: none;">Volver al inicio</a></button>
+        </div>
+    </div>
+</body>
+</html>

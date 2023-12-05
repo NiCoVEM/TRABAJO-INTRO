@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Cool</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("{% static '/BOOTSTRAP/imagenes/desktop-wallpaper-full-solid-color-solid-color-color.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: #000;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .title {
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        .main-content {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            margin-right: 10px;
+        }
+
+        .main-content .small-image {
+            max-width: 280px;
+            height: auto;
+            float: right;
+        }
+
+        .footer {
+            text-align: left;
+            margin-top: 50px;
+            margin-right: 300px;
+            padding-top: 20px;
+            border-top: 1px solid rgb(255, 255, 255)8e8;
+        }
+        .back-to-home-button {
+            background-color: #808080; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            padding: 10px 20px; /* Espaciado interno del botón */
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px; /* Espaciado superior */
+            cursor: pointer;
+        }
+
+        /* Cambia el color cuando pasas el mouse sobre el botón */
+        .back-to-home-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <!--<img src="{% static '/BOOTSTRAP/imagenes/Abeto1.jpg' %}" alt="Imagen Superior">-->
+            <div class="title">Acerca de</div>
+        </div>
+
+        <div class="main-content">
+            <h1>¿Qué es el cambio climático?</h1>
+            <p>El cambio climático es un cambio a largo plazo en el clima de la Tierra. El clima está acostumbrado a ciertas condiciones, como la cantidad de calor que recibimos del sol. Sin embargo, debido a ciertas actividades humanas, como quemar combustibles fósiles y talar bosques, estamos aumentando la cantidad de ciertos gases en la atmósfera, como el dióxido de carbono.
+
+                Estos gases extra actúan como una especie de manta alrededor de la Tierra, atrapando más calor del sol. Esto hace que la Tierra se caliente más de lo que solía hacerlo. Como resultado, estamos experimentando cambios en el clima, como temperaturas más altas, eventos climáticos extremos (como huracanes más fuertes o sequías más intensas) y alteraciones en los patrones climáticos normales.
+                
+                El cambio climático es un cambio gradual en el clima de nuestro planeta causado por actividades humanas que aumentan la cantidad de gases que retienen el calor en la atmósfera. Este fenómeno está afectando nuestro clima de maneras que pueden ser perjudiciales para la vida en la Tierra.
+                </p>
+            <!--<img class="small-image" src="{% static '/BOOTSTRAP/imagenes/Abeto2.jpg' %}" alt="Imagen Inferior">-->
+        </div>
+
+        <div class="footer">
+            <h2>¿Cómo nos afecta el cambio climático?</h2>
+            <ol>
+            <p>El cambio climático nos afecta de diversas maneras, y sus impactos se extienden a muchos aspectos de nuestras vidas. Aquí hay algunas formas en que el cambio climático puede influir en nosotros:</p>
+            <li>Temperaturas extremas: El calentamiento global provoca temperaturas más altas en muchas partes del mundo. Esto puede dar lugar a olas de calor intensas que afectan la salud humana, especialmente entre las personas más vulnerables, como los ancianos y los niños.</li>
+            <li>Eventos climáticos extremos: El cambio climático contribuye a la intensificación de eventos climáticos extremos, como huracanes, inundaciones, sequías e incendios forestales. Estos eventos pueden causar daños materiales, pérdida de vidas y afectar la seguridad alimentaria.</li>
+            <li>Cambio en patrones de lluvia: Algunas regiones pueden experimentar cambios en los patrones de lluvia, lo que afecta a la disponibilidad de agua. Esto puede dar lugar a sequías prolongadas o, en algunos casos, a lluvias intensas y tormentas, lo que contribuye a problemas como inundaciones.</li>
+            <li>Amenazas para la biodiversidad: El cambio climático puede afectar los ecosistemas y poner en peligro la biodiversidad. Las especies animales y vegetales pueden enfrentar dificultades para adaptarse a los nuevos patrones climáticos, lo que podría llevar a la extinción de algunas especies.</li>
+            <li>Impacto en la agricultura: Las variaciones en las condiciones climáticas pueden afectar la producción de alimentos. Cambios en las temperaturas, patrones de lluvia y eventos climáticos extremos pueden poner en peligro los cultivos y afectar la seguridad alimentaria.</li>
+            <li>Incremento del nivel del mar: El deshielo de los glaciares y las capas de hielo, junto con la expansión térmica del agua, contribuye al aumento del nivel del mar. Esto representa una amenaza para las comunidades costeras y las islas bajas.</li>
+            <li>Problemas de salud: El cambio climático puede afectar la salud humana al aumentar la propagación de enfermedades transmitidas por vectores, como el dengue y la malaria, debido a la expansión de las áreas propicias para los vectores.</li>
+            <li>Impactos económicos: Los eventos climáticos extremos y los cambios en los patrones climáticos pueden tener consecuencias económicas, afectando la agricultura, la infraestructura y otros sectores.</li>
+            </ol>
+            <button class="back-to-home-button"><a href="/entrada" style="color: black; text-decoration: none;">Volver</a></button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Final</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("{% static '/BOOTSTRAP/imagenes/fondo-pagina-2.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            font-family: 'Arial', sans-serif;
+            color: #000;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin-top: 50px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .title {
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        .main-content {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .main-content p {
+            margin-right: 10px;
+        }
+
+        .main-content .small-image {
+            max-width: 280px;
+            height: auto;
+            float: right;
+        }
+
+        .footer {
+            text-align: left;
+            margin-top: 50px;
+            margin-right: 300px;
+            padding-top: 20px;
+            border-top: 1px solid rgb(255, 255, 255)8e8;
+        }
+        .back-to-home-button {
+            background-color: #808080; /* Color de fondo del botón */
+            color: white; /* Color del texto del botón */
+            padding: 10px 20px; /* Espaciado interno del botón */
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px; /* Espaciado superior */
+            cursor: pointer;
+        }
+
+        /* Cambia el color cuando pasas el mouse sobre el botón */
+        .back-to-home-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="{% static '/BOOTSTRAP/imagenes/Alamo1.jpg' %}" alt="Imagen Superior">
+            <div class="title">¡Eres un Álamo!</div>
+        </div>
+
+        <div class="main-content">
+            <p>El álamo es un árbol de hojas caducas con un tronco alto y delgado que puede elevarse majestuosamente en el paisaje. Sus hojas son generalmente de forma triangular y tienen un distintivo movimiento tembloroso cuando son acariciadas por el viento. Lo que hace único al álamo es esta característica capacidad de sus hojas para temblar, gracias a sus peciolos largos y flexibles.</p>
+            <img class="small-image" src="{% static '/BOOTSTRAP/imagenes/Alamo2.jpg' %}" alt="Imagen Inferior">
+        </div>
+
+        <div class="footer">
+            <h2>¿Cómo influye este árbol en el medio ambiente?</h2>
+            <p>El álamo tiene un impacto positivo en el medio ambiente al proporcionar sombra y refugio para diversas especies de aves y mamíferos. Además, su rápido crecimiento lo convierte en una opción valiosa para la reforestación y la captura de carbono atmosférico. Los álamos también ayudan a prevenir la erosión del suelo con sus raíces extensas y contribuyen a mantener la calidad del agua en áreas ribereñas.</p>
+            <h2>¿Cómo cuidar este árbol?</h2>
+            <p>Para cuidar un álamo, es esencial plantarlo en un suelo bien drenado y proporcionarle una exposición completa al sol. El riego regular, especialmente durante los primeros años, es importante para establecer un sistema de raíces fuerte. La poda ocasional puede ser necesaria para eliminar ramas muertas o enfermas y dar forma al árbol. Además, protegerlo de plagas comunes, como orugas y ácaros, contribuirá a mantener su salud y vitalidad.</p>
+            <button class="back-to-home-button"><a href="/entrada" style="color: black; text-decoration: none;">Volver al inicio</a></button>
+        </div>
+    </div>
+</body>
+</html>
