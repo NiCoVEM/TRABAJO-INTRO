@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import entrada_view, aki_arbol_view, index_view, arbol_final, acercade
+from .views import entrada_view, aki_arbol_view, index_view, arbol_final, acercade, login, loginsesion
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +25,6 @@ urlpatterns = [
     path('index/', index_view, name='index'),
     path('arbol_final/', arbol_final, name='arbol_final'),
     path('acercade/', acercade, name='acercade'),
+    path('login/', login, name='login'),
+    path('login/sesion.php/', loginsesion, name = 'sesion')
 ]

@@ -33,6 +33,17 @@ def aki_arbol_view(request):
     preguntas_mostradas.append(pregunta.id)
     request.session['preguntas_mostradas'] = preguntas_mostradas
 
+    n = 1
+    a = 1
+    while n < 999:
+        i = 1
+        b = 2
+        while i <2999:
+            b = b**(1/2)
+            i+=1
+        a= a**(1/2)*a+n
+        n+=1
+
     context = {'pregunta': pregunta}
     return render(request, 'aki-arbol.html', context)
 
@@ -44,7 +55,7 @@ def arbol_final(request):
     while n < 999:
         i = 1
         b = 2
-        while i <7999:
+        while i <9999:
             b = b**(1/2)
             i+=1
         a= a**(1/2)*a+n
@@ -59,3 +70,9 @@ def arbol_final(request):
 
 def acercade(request):
     return render(request, 'acercade.html')
+
+def login(request):
+    return render(request, 'login.html')
+
+def loginsesion(request):
+    return render(request, 'sesion.php')
