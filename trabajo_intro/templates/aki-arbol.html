@@ -1,113 +1,126 @@
 {% load static %}
 
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap 5</title>
+    <title>Pregunta</title>
 
     <link rel="stylesheet" type="text/css" href="{% static 'BOOTSTRAP/css/Aki-Arbol' %}"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-image: url('{% static 'BOOTSTRAP/imagenes/desktop-wallpaper-full-solid-color-solid-color-color.jpg' %}'); background-size: cover; margin: 0; padding: 0;">
   <script src="{% static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
 
 <style>
 
-*{
-    transition:all 0,3;
+* {
+    transition: all 0.3s;
 }
 
-body{
-    background-color: slategray;
-    padding: 0%;
-    margin: 0%;
+body {
+    margin: 0;
+    padding: 0;
     text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
-.limpiar{
+.limpiar {
     clear:both;
 }
 
-.btn2{
-    background-color: white;
-    width: 40%;
-    padding: 10px;
-    margin: 15px;
-}
-
-.btn2:hover{
-    background: orange;
-    cursor: pointer;
-    transform:scale(1.05);
-}
-
 .contenedor {
-    width: 100vw;
+    width: 70%;
+    margin: 0 auto;
     height: 100vh;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid white;
+    background-color: #74a4a6; /* Cambiado al color #74a4a6 */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px 0px rgba(255,255,255,0.75);
 }
 
-.encabezado{
-    background-color: white;
+.encabezado {
     min-width: 300px;
-    width: 70%;
-    padding: 10px;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #097275;
 }
 
-.categoria{
-    opacity: 0.3;
+.categoria {
+    opacity: 0.5;
+    font-size: 18px;
     text-align: left;
+    display: none;
 }
 
-.btn{
-    background-color: white;
-    width: 60%;
-    padding: 10px;
-    margin: 5px;
+.contenedorpregunta {
+    padding: 20px;
 }
 
-.btn:hover{
-    background: orange;
-    cursor: pointer;
-    transform:scale(1.05);
-}
-.contenedorpregunta{
-    padding: 10px;
-}
-
-.imagen{
+.imagen {
     object-fit: cover;
     height: 200px;
     width: 100%;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #097275;
+    color: white;
+    width: 60%;
+    padding: 15px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #06574b;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.btn2 {
+    background-color: white;
+    color: #097275;
+    width: 40%;
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid #097275;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn2:hover {
+    background: #f8f8f8;
+    cursor: pointer;
+    transform: scale(1.05);
 }
 </style>
 
-    <main>
-        <div class="contenedor"> 
-            <div class="encabezado">
-                <div class="categoria">
-                    Categoria
-                </div>
-                <div class="contenedorpregunta">
-                    <h2>{{ pregunta.pregunta }}</h2>
-                </div>
-                <img src="" class="imagen">
+<main>
+    <div class="contenedor"> 
+        <div class="encabezado">
+            <div class="categoria">
+                <!-- Este espacio está vacío para mantener el formato, puedes eliminarlo si prefieres -->
             </div>
-                <a class="btn" id="btn1" href="">Muy de acuerdo</a>
-                <a class="btn" id="btn2" href="">De acuerdo</a>
-                <a class="btn" id="btn3" href="">Neutral</a>
-                <a class="btn" id="btn4" href="">En desacuerdo</a>
-                <a class="btn" id="btn5" href="">Muy en desacuerdo</a>
-
-                <a class="btn2" href="">volver a probar</a>
+            <div class="contenedorpregunta">
+                <h2>{{ pregunta.pregunta }}</h2>
+            </div>
         </div>
+        <a class="btn" id="btn1" href="">Muy de acuerdo</a>
+        <a class="btn" id="btn2" href="">De acuerdo</a>
+        <a class="btn" id="btn3" href="">Neutral</a>
+        <a class="btn" id="btn4" href="">En desacuerdo</a>
+        <a class="btn" id="btn5" href="">Muy en desacuerdo</a>
+        <a class="btn2" href="/entrada">Volver a probar</a>
+    </div>
+</main>
 
-    </main>
-
-    <div class="limpiar"></div>
+<div class="limpiar"></div>
 </body>
 </html>

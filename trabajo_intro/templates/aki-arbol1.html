@@ -1,0 +1,113 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'BOOTSTRAP/css/Aki-Arbol' %}"/>
+</head>
+<body>
+  <script src="{% static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+<style>
+
+*{
+    transition:all 0,3;
+}
+
+body{
+    background-color: slategray;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
+
+.limpiar{
+    clear:both;
+}
+
+.btn2{
+    background-color: white;
+    width: 40%;
+    padding: 10px;
+    margin: 15px;
+}
+
+.btn2:hover{
+    background: orange;
+    cursor: pointer;
+    transform:scale(1.05);
+}
+
+.contenedor {
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.encabezado{
+    background-color: white;
+    min-width: 300px;
+    width: 70%;
+    padding: 10px;
+}
+
+.categoria{
+    opacity: 0.3;
+    text-align: left;
+}
+
+.btn{
+    background-color: white;
+    width: 60%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.btn:hover{
+    background: orange;
+    cursor: pointer;
+    transform:scale(1.05);
+}
+.contenedorpregunta{
+    padding: 10px;
+}
+
+.imagen{
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+</style>
+
+    <main>
+        <div class="contenedor"> 
+            <div class="encabezado">
+                <div class="categoria">
+                    Categoria
+                </div>
+                <div class="contenedorpregunta">
+                    <h2>{{ pregunta.pregunta }}</h2>
+                </div>
+                <img src="" class="imagen">
+            </div>
+                <a class="btn" id="btn1" href="">Muy de acuerdo</a>
+                <a class="btn" id="btn2" href="">De acuerdo</a>
+                <a class="btn" id="btn3" href="">Neutral</a>
+                <a class="btn" id="btn4" href="">En desacuerdo</a>
+                <a class="btn" id="btn5" href="">Muy en desacuerdo</a>
+
+                <a class="btn2" href="">volver a probar</a>
+        </div>
+
+    </main>
+
+    <div class="limpiar"></div>
+</body>
+</html>
